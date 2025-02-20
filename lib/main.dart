@@ -1,4 +1,4 @@
-import 'package:dashboard/views/home_view.dart';
+import 'package:dashboard/views/dashboard_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +11,8 @@ class ResponsiveDashboardView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomeView(),
+      home: DashboardView(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
