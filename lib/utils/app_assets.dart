@@ -38,6 +38,14 @@ class Assets {
   /// assets/images/investments_icon.svg
   static const String imagesInvestmentsIcon = "assets/images/investments_icon.svg";
 
+  /// Assets for imagesLogout
+  /// assets/images/logout.svg
+  static const String imagesLogout = "assets/images/logout.svg";
+
+  /// Assets for imagesSetting2
+  /// assets/images/setting-2.svg
+  static const String imagesSetting2 = "assets/images/setting-2.svg";
+
   /// Assets for imagesStatisticesIcon
   /// assets/images/statistices_icon.svg
   static const String imagesStatisticesIcon = "assets/images/statistices_icon.svg";
