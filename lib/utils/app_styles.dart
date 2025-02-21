@@ -61,4 +61,5 @@ abstract class AppStyles {
     fontWeight: FontWeight.w500,
     fontFamily: 'Montserrat',
   );
+
 }
