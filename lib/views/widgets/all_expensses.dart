@@ -1,5 +1,5 @@
-import 'package:dashboard/utils/app_styles.dart';
 import 'package:dashboard/views/widgets/all_expensses_header.dart';
+import 'package:dashboard/views/widgets/all_expensses_items_list_view.dart';
 import 'package:flutter/material.dart';
 
 class AllExpensses extends StatelessWidget {
@@ -18,6 +18,7 @@ class AllExpensses extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
             child: AllExpensesHeader(),
           ),
+          AllExpenssesItemsListView(),
         ],
       ),
     );

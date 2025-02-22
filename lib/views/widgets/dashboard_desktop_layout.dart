@@ -13,6 +13,7 @@ class DashboardDesktopLayout extends StatelessWidget {
         Expanded(flex: 1, child: CustomDrawer()),
         const SizedBox(width: 32),
         Expanded(flex: 3, child: CustomExpanded2()),
+        Expanded(flex: 2, child: const SizedBox()),
       ],
     );
   }
