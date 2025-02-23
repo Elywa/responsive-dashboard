@@ -1,5 +1,6 @@
 import 'package:dashboard/models/all_expensses_item_model.dart';
 import 'package:dashboard/utils/app_styles.dart';
+import 'package:dashboard/views/widgets/all_expensses_item_header.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -19,40 +20,35 @@ class ActiveAllExpenssesItem extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            children: [
-              CircleAvatar(
-                radius: 30,
-                backgroundColor: Colors.white.withOpacity(0.10000000149011612),
-                child: Center(
-                  child: SvgPicture.asset(
-                    item.image,
-                    colorFilter: ColorFilter.mode(
-                      Colors.white,
-                      BlendMode.srcIn,
-                    ),
-                  ),
-                ),
-              ),
-              Spacer(),
-
-              Icon(Icons.arrow_forward_ios, color: Colors.white),
-            ],
+          AllExpensessItemHeader(
+            item: item,
+            backgroundImageColor: Colors.white.withOpacity(0.10000000149011612),
+            imageColor: Colors.white,
+            arrowColor: Colors.white,
           ),
           const SizedBox(height: 34),
-          Text(
-            item.title,
-            style: AppStyles.textSemiBold16.copyWith(color: Colors.white),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              item.title,
+              style: AppStyles.textSemiBold16.copyWith(color: Colors.white),
+            ),
           ),
           const SizedBox(height: 8),
-          Text(
-            item.date,
-            style: AppStyles.textRegular14.copyWith(color: Colors.white),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              item.date,
+              style: AppStyles.textRegular14.copyWith(color: Colors.white),
+            ),
           ),
           const SizedBox(height: 16),
-          Text(
-            item.price,
-            style: AppStyles.textSemiBold24.copyWith(color: Colors.white),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              item.price,
+              style: AppStyles.textSemiBold24.copyWith(color: Colors.white),
+            ),
           ),
         ],
       ),
@@ -77,24 +73,27 @@ class InActiveAllExpenssesItem extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            children: [
-              CircleAvatar(
-                radius: 30,
-                backgroundColor: Color(0xffFAFAFA),
-                child: Center(child: SvgPicture.asset(item.image)),
-              ),
-              Spacer(),
-
-              Icon(Icons.arrow_forward_ios, color: Color(0xff064061)),
-            ],
+          AllExpensessItemHeader(
+            item: item,
+            backgroundImageColor: Color(0xffFAFAFA),
+            imageColor: Color(0xff4EB7F2),
+            arrowColor: Color(0xff4EB7F2),
           ),
           const SizedBox(height: 34),
-          Text(item.title, style: AppStyles.textSemiBold16),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(item.title, style: AppStyles.textSemiBold16),
+          ),
           const SizedBox(height: 8),
-          Text(item.date, style: AppStyles.textRegular14),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(item.date, style: AppStyles.textRegular14),
+          ),
           const SizedBox(height: 16),
-          Text(item.price, style: AppStyles.textSemiBold24),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(item.price, style: AppStyles.textSemiBold24),
+          ),
         ],
       ),
     );
