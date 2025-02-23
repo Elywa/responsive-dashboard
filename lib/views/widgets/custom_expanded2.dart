@@ -10,12 +10,7 @@ class CustomExpanded2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [
-        SizedBox(height: 40),
-        AllExpensses(),
-        SizedBox(height: 24),
-        QuickInvoice(),
-      ],
+      children: [AllExpensses(), SizedBox(height: 24), QuickInvoice()],
     );
   }
 }

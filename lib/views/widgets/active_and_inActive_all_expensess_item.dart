@@ -42,7 +42,7 @@ class ActiveAllExpenssesItem extends StatelessWidget {
               style: AppStyles.textRegular14.copyWith(color: Colors.white),
             ),
           ),
-          const SizedBox(height: 16),
+
           FittedBox(
             fit: BoxFit.scaleDown,
             child: Text(
@@ -89,7 +89,7 @@ class InActiveAllExpenssesItem extends StatelessWidget {
             fit: BoxFit.scaleDown,
             child: Text(item.date, style: AppStyles.textRegular14),
           ),
-          const SizedBox(height: 16),
+
           FittedBox(
             fit: BoxFit.scaleDown,
             child: Text(item.price, style: AppStyles.textSemiBold24),

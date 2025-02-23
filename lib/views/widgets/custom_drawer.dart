@@ -1,4 +1,5 @@
 import 'package:dashboard/models/drawer_item_model.dart';
+import 'package:dashboard/models/lates_transaction_item_model.dart';
 import 'package:dashboard/utils/app_assets.dart';
 import 'package:dashboard/utils/app_styles.dart';
 import 'package:dashboard/views/widgets/active_and_inactive_drawer_item.dart';
@@ -19,9 +20,7 @@ class CustomDrawer extends StatelessWidget {
         slivers: [
           SliverToBoxAdapter(
             child: UserInfoList(
-              title: 'Lekan Okeowo',
-              subtitle: 'demo@gmail.com',
-              leadingIcon: Assets.imagesAvatar3,
+            item:  LatesTransactionItemModel(image: Assets.imagesAvatar1, title: "Ahmed Eliwa", mail: "aeliwa13@gmail.com")
             ),
           ),
           DrawerItemsListView(),
