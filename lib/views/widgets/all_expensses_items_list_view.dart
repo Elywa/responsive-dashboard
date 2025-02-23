@@ -36,7 +36,7 @@ class _AllExpenssesItemsListViewState extends State<AllExpenssesItemsListView> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 20, right: 20, top: 16, bottom: 20),
+      padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
       child: Row(
         children:
             items.asMap().entries.map((e) {
@@ -64,11 +64,13 @@ class _AllExpenssesItemsListViewState extends State<AllExpenssesItemsListView> {
               } else {
                 return Expanded(
                   child: GestureDetector(
-                    onTap: () { if (activeIndex != index) {
+                    onTap: () {
+                      if (activeIndex != index) {
                         setState(() {
                           activeIndex = index;
                         });
-                      }},
+                      }
+                    },
                     child: AllExpenssesItem(
                       item: item,
                       isActive: activeIndex == index,
