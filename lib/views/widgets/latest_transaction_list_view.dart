@@ -21,9 +21,38 @@ class LatestTransactionListView extends StatelessWidget {
       title: "Ahmed Eliwa",
       mail: "aeliwa13@gmail",
     ),
+    LatesTransactionItemModel(
+      image: Assets.imagesAvatar3,
+      title: "Ahmed Eliwa",
+      mail: "aeliwa13@gmail",
+    ),
+    LatesTransactionItemModel(
+      image: Assets.imagesAvatar3,
+      title: "Ahmed Eliwa",
+      mail: "aeliwa13@gmail",
+    ),
+    LatesTransactionItemModel(
+      image: Assets.imagesAvatar3,
+      title: "Ahmed Eliwa",
+      mail: "aeliwa13@gmail",
+    ),
+    LatesTransactionItemModel(
+      image: Assets.imagesAvatar3,
+      title: "Ahmed Eliwa",
+      mail: "aeliwa13@gmail",
+    ),
   ];
   @override
   Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children:
+            items
+                .map((e) => IntrinsicWidth(child: UserInfoList(item: e)))
+                .toList(),
+      ),
+    );
     return SizedBox(
       height: 70,
       child: ListView.builder(

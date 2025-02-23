@@ -12,10 +12,7 @@ class InActiveDrawerItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: SvgPicture.asset(drawerItem.route),
-      title: FittedBox(
-        fit: BoxFit.scaleDown,
-        child: Text(drawerItem.title, style: AppStyles.textRegular16),
-      ),
+      title: Text(drawerItem.title, style: AppStyles.textRegular16),
     );
   }
 }
@@ -29,10 +26,7 @@ class ActiveDrawerItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: SvgPicture.asset(drawerItem.route),
-      title: FittedBox(
-        fit: BoxFit.scaleDown,
-        child: Text(drawerItem.title, style: AppStyles.textBold16),
-      ),
+      title: Text(drawerItem.title, style: AppStyles.textBold16),
       trailing: Container(width: 5, color: Color(0xFF4EB7F2)),
     );
   }

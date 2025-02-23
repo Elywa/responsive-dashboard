@@ -12,7 +12,7 @@ class ActiveAllExpenssesItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
       decoration: BoxDecoration(
         color: Color(0xff4EB7F2),
         borderRadius: BorderRadius.circular(12),
@@ -26,7 +26,7 @@ class ActiveAllExpenssesItem extends StatelessWidget {
             imageColor: Colors.white,
             arrowColor: Colors.white,
           ),
-          const SizedBox(height: 34),
+          const SizedBox(height: 20),
           FittedBox(
             fit: BoxFit.scaleDown,
             child: Text(
@@ -79,7 +79,7 @@ class InActiveAllExpenssesItem extends StatelessWidget {
             imageColor: Color(0xff4EB7F2),
             arrowColor: Color(0xff4EB7F2),
           ),
-          const SizedBox(height: 34),
+          const SizedBox(height: 20),
           FittedBox(
             fit: BoxFit.scaleDown,
             child: Text(item.title, style: AppStyles.textSemiBold16),
