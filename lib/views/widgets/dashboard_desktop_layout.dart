@@ -1,7 +1,15 @@
+import 'package:dashboard/utils/app_assets.dart';
+import 'package:dashboard/utils/app_styles.dart';
+import 'package:dashboard/views/widgets/credit_card_widget.dart';
 import 'package:dashboard/views/widgets/custom_expanded2.dart';
 import 'package:dashboard/views/widgets/custom_drawer.dart';
+import 'package:dashboard/views/widgets/custom_expanded_3.dart';
+import 'package:dashboard/views/widgets/dot_indicator.dart';
+import 'package:dashboard/views/widgets/row_indicators.dart';
+import 'package:expandable_page_view/expandable_page_view.dart';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class DashboardDesktopLayout extends StatelessWidget {
   const DashboardDesktopLayout({super.key});
@@ -12,14 +20,15 @@ class DashboardDesktopLayout extends StatelessWidget {
       children: [
         Expanded(flex: 1, child: CustomDrawer()),
         const SizedBox(width: 32),
-        Expanded(
-          flex: 3,
-          child: CustomScrollView(
-            slivers: [SliverToBoxAdapter(child: CustomExpanded2())],
-          ),
-        ),
-        Expanded(flex: 2, child: const SizedBox()),
+        Expanded(flex: 3, child: CustomExpanded2()),
+        const SizedBox(width: 28),
+        Expanded(flex: 2, child: const CustomExpanded3()),
+        const SizedBox(width: 32),
       ],
     );
   }
 }
+
+
+
+

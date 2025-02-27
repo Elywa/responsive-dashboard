@@ -15,7 +15,7 @@ class CustomExpanded2 extends StatelessWidget {
         AllExpensses(),
         SizedBox(height: 24),
         QuickInvoice(),
-        SizedBox(height: 24),
+        SizedBox(height: 15),
       ],
     );
   }

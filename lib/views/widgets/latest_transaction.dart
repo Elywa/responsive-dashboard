@@ -23,6 +23,7 @@ class LatestTransaction extends StatelessWidget {
           LatestTransactionListView(),
           SizedBox(height: 24),
           Divider(color: Color(0xFFF1F1F1), thickness: 1),
+          SizedBox(height: 24),
           Row(
             children: [
               Expanded(child: TitleTextField(title: "Customer Name")),
@@ -64,4 +65,3 @@ class LatestTransaction extends StatelessWidget {
     );
   }
 }
-
