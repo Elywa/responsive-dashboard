@@ -23,5 +23,3 @@ class CustomExpanded3 extends StatelessWidget {
     );
   }
 }
-
-
