@@ -20,7 +20,10 @@ class DashboardDesktopLayout extends StatelessWidget {
       children: [
         Expanded(flex: 1, child: CustomDrawer()),
         const SizedBox(width: 32),
-        Expanded(flex: 3, child: CustomExpanded2(isTablet: false)),
+        Expanded(
+          flex: 3,
+          child: CustomExpanded2(isTablet: false, isMobile: false),
+        ),
         const SizedBox(width: 28),
         Expanded(
           flex: 2,

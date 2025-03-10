@@ -6,20 +6,21 @@ import 'package:dashboard/views/widgets/quick_invoice.dart';
 import 'package:flutter/material.dart';
 
 class CustomExpanded2 extends StatelessWidget {
-  const CustomExpanded2({super.key ,required this.isTablet});
-  final  bool isTablet ;
+  const CustomExpanded2({super.key, required this.isTablet, required this.isMobile});
+  final bool isTablet;
+  final bool isMobile; 
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
         children: [
-          SizedBox(height: 24),
+         !isMobile ? SizedBox(height: 24) :SizedBox(),
           AllExpensses(),
           SizedBox(height: 24),
           QuickInvoice(),
           SizedBox(height: 15),
 
-         isTablet! ?  CustomExpanded3() : SizedBox(),
+          isTablet! ? CustomExpanded3() : SizedBox(),
         ],
       ),
     );

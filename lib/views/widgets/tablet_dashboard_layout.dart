@@ -14,7 +14,10 @@ class TabletDashboardLayout extends StatelessWidget {
       children: [
         Expanded(flex: 1, child: CustomDrawer()),
         SizedBox(width: 40),
-        Expanded(flex: 2, child: CustomExpanded2(isTablet: true)),
+        Expanded(
+          flex: 2,
+          child: CustomExpanded2(isTablet: true, isMobile: false),
+        ),
         SizedBox(width: 40),
       ],
     );

@@ -7,7 +7,7 @@ class DashboardMobileLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      child: Column(children: [CustomExpanded2(isTablet: true)]),
+      child: Column(children: [CustomExpanded2(isTablet: true , isMobile: true,)]),
     );
   }
 }
