@@ -1,8 +1,5 @@
 import 'package:dashboard/views/widgets/custom_drawer.dart';
 import 'package:dashboard/views/widgets/custom_expanded2.dart';
-
-import 'package:dashboard/views/widgets/custom_expanded_3.dart';
-
 import 'package:flutter/material.dart';
 
 class TabletDashboardLayout extends StatelessWidget {
